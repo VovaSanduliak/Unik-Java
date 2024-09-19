@@ -131,12 +131,12 @@ class Variant16Test {
     // region arrayTask
     @ParameterizedTest
     @DisplayName("Array")
-    @MethodSource("arrayTaskTestData")
+    @MethodSource
     void arrayTest(double[] expectedArr, double[] argArray, String message) {
         assertArrayEquals(expectedArr, variant16.arrayTask(argArray), message);
     }
 
-    static Stream<Arguments> arrayTaskTestData() {
+    static Stream<Arguments> arrayTest() {
         return Stream.of(
                 Arguments.arguments(new double[]{1, 5, 2, 4, 3}, new double[]{1, 2, 3, 4, 5}, "Error with odd numbers of elements"),
                 Arguments.arguments(new double[]{1, 4, 2, 3}, new double[]{1, 2, 3, 4}, "Error with even numbers of elements"),
