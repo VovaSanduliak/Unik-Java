@@ -1,5 +1,7 @@
 package lab01;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -12,6 +14,9 @@ public abstract class Device {
     protected String model;
     protected House house;
     protected DeviceType type;
+    protected LocalDateTime createdAt;
+    protected LocalDateTime lastTurnedOnAt;
+
     protected boolean isActive;
 
     /**
@@ -21,6 +26,8 @@ public abstract class Device {
     public Device(String name) {
         this.id = UUID.randomUUID();
         this.name = name;
+        this.createdAt = LocalDateTime.now();
+        this.lastTurnedOnAt = null;
     }
 
     /**
@@ -29,6 +36,14 @@ public abstract class Device {
      */
     public UUID getId() {
         return this.id;
+    }
+
+    /**
+     * Gets the time when the device was created
+     * @return the time when the device was created
+     */
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
     /**
@@ -96,6 +111,18 @@ public abstract class Device {
     }
 
     /**
+     * Gets the device working time since last turned on
+     * @return device's working time duration
+     */
+    public Duration getWorkingTime() {
+        if (lastTurnedOnAt == null) {
+            return Duration.ZERO;
+        }
+
+        return Duration.between(lastTurnedOnAt, LocalDateTime.now());
+    }
+
+    /**
      * Checks if the device is currently active.
      * @return True if the device is active, false otherwise.
      */
@@ -109,6 +136,7 @@ public abstract class Device {
      */
     public boolean turnOn() {
         this.isActive = true;
+        this.lastTurnedOnAt = LocalDateTime.now();
         return true;
     }
 
@@ -118,6 +146,7 @@ public abstract class Device {
      */
     public boolean turnOff() {
         this.isActive = false;
+        this.lastTurnedOnAt = null;
         return true;
     }
 
@@ -145,4 +174,6 @@ public abstract class Device {
      * @return True if the objects are equal, false otherwise.
      */
     public abstract boolean equals(Object o);
+
+
 }
