@@ -1,15 +1,14 @@
 package lab01;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class UserTest {
-    private String userName = "Vova Sanduliak";
-    private String email = "thisisemail@mail.com";
-    private String password = "password123";
+    private final String userName = "Vova";
+    private final String email = "thisisemail@mail.com";
+    private final String password = "password123";
     private User user;
 
     @BeforeEach
