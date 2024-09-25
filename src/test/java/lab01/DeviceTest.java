@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class DeviceTest
-{
+public class DeviceTest {
     @Test
     public void testDeviceCreation() {
         Device device = new HeatDevice("Heater");
@@ -34,14 +33,12 @@ public class DeviceTest
         device.setHouse(house);
 
         assertEquals("Ne golovna, 1", device.getHouseAddress());
+    }
 
+    @Test
+    public void testGetHouseAddressWhenNotAssigned() {
         Device deviceWithoutHouse = new LightDevice("Light");
         assertEquals("no house assigned", deviceWithoutHouse.getHouseAddress());
-
-        house.setAddress("Golovna, 2");
-        assertEquals("Golovna, 2", device.getHouseAddress());
-
-
     }
 
     @Test

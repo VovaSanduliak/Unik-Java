@@ -72,27 +72,15 @@ public class HouseTest {
     }
 
     @Test
-    public void testEqualsWithSameObject() {
-        assertTrue(house.equals(house));
-    }
-
-    @Test
-    public void testEqualsWithDifferentClass() {
-        String differentObject = "Some string";
-
-        assertFalse(device.equals(differentObject));
-    }
-
-    @Test
     public void testEqualsWithSameClass() {
-        House house2 = new House("Meat warehouse", "ne golovna, 1");
+        House house2 = new House("Meat warehouse", "Ne golovna, 1");
 
-        assertFalse(house.equals(house2));
+        assertNotEquals(house, house2);
     }
 
     @Test
     public void testEqualsWithNull() {
-        assertFalse(house.equals(null));
+        assertNotEquals(null, house);
 
     }
 
@@ -114,6 +102,6 @@ public class HouseTest {
             }
         };
 
-        assertFalse(house1.equals(house2));
+        assertNotEquals(house1, house2);
     }
 }

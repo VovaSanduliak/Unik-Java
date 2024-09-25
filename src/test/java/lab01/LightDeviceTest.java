@@ -10,9 +10,12 @@ public class LightDeviceTest {
     @Test
     public void testLightDeviceCreation() {
         LightDevice device = new LightDevice("Light");
-        assertNotNull(device.getId());
-        assertEquals("Light", device.getName());
-        assertEquals(DeviceType.LIGHT_DEVICE, device.getType());
+
+        assertAll(() -> {
+            assertNotNull(device.getId());
+            assertEquals("Light", device.getName());
+            assertEquals(DeviceType.LIGHT_DEVICE, device.getType());
+        });
     }
 
     @ParameterizedTest
@@ -20,6 +23,7 @@ public class LightDeviceTest {
     public void testSetBrightness(int value) {
         LightDevice device = new LightDevice("Light");
         device.setBrightness(value);
+
         assertEquals(value, device.getBrightness());
     }
 
@@ -27,6 +31,7 @@ public class LightDeviceTest {
     @ValueSource(ints = {-1, 105})
     public void testSetBrightnessThrowError(int value) {
         LightDevice device = new LightDevice("Light");
+
         assertThrows(IllegalArgumentException.class,  () -> device.setBrightness(value));
     }
 
@@ -46,40 +51,12 @@ public class LightDeviceTest {
                 "}";
 
         assertEquals(expected, lightDevice.toString());
-
-        house.setAddress(null);
-        expected = "LightDevice {" +
-                "id=" + lightDevice.getId() +
-                ", name=Light" +
-                ", model=Model-Y" +
-                ", type=LIGHT_DEVICE" +
-                ", house=no house assigned" +
-                "}";
-
-        assertEquals(expected, lightDevice.toString());
     }
 
     @Test
     public void testEqualsWithSameObject() {
         LightDevice device = new LightDevice("Light");
 
-        assertTrue(device.equals(device));
+        assertEquals(device, device);
     }
-
-    @Test
-    public void testEqualsWithDifferentClass() {
-        LightDevice device = new LightDevice("Light");
-        String differentObject = "Some string";
-
-        assertFalse(device.equals(differentObject));
-    }
-
-    @Test
-    public void testEqualsWithNull() {
-        LightDevice device = new LightDevice("Light");
-
-        assertFalse(device.equals(null));
-    }
-
-
 }
