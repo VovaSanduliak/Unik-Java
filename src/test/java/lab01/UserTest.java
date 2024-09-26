@@ -28,7 +28,7 @@ public class UserTest {
 
     @Test
     public void testAddRemoveHouse() {
-        House house = new House("Henhouse", "Ne golovna, 1");
+        House house = new House("Hen house", "Ne golovna, 1");
         user.addHouse(house);
 
         assertTrue(user.getHouses().contains(house));

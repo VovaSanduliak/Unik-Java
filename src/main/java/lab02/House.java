@@ -1,4 +1,4 @@
-package lab01;
+package lab02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.UUID;
  * Represents a house that can have multiple devices assigned to it.
  * Each house has a unique ID, a name, an address, and a list of devices.
  */
-public class House implements Comparable<House> {
+public class House {
     /**
      * The unique identifier of the house.
      */
@@ -111,6 +111,15 @@ public class House implements Comparable<House> {
     }
 
     /**
+     * Adds many devices to the house's list of devices.
+     *
+     * @param devices the device to add
+     */
+    public void addDevices(List<Device> devices) {
+        devices.forEach(device -> addDevice(device));
+    }
+    
+    /**
      * Removes a device from the house's list of devices.
      *
      * @param device the device to remove
@@ -157,10 +166,5 @@ public class House implements Comparable<House> {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, address);
-    }
-
-    @Override
-    public int compareTo(House h) {
-        return this.name.compareTo(h.getName());
     }
 }
