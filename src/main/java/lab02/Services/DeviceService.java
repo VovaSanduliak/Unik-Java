@@ -2,19 +2,21 @@ package lab02.Services;
 
 import lab02.Device;
 
+import java.lang.reflect.Array;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
+
 
 public class DeviceService {
-    private Device device;
+    private final List<Device> devices;
 
-    public DeviceService(Device device) {
-        this.device = device;
+    public DeviceService(List<Device> devices) {
+        this.devices = devices;
     }
 
-    public static Optional<Device> findByName(List<Device> devices, String name) {
+    public List<Device> findByName(List<Device> devices, String name) {
         return devices.stream()
                 .filter(device -> device.getName().equals(name))
-                .findFirst();
+                .collect(Collectors.toList());
     }
 }
