@@ -1,0 +1,61 @@
+---
+userName: "Barack Obama"
+email: "elpresidente@mail.com"
+password: "1234"
+id: "d1300c96-c9fd-4a64-9b36-d93d9ce4e51b"
+houses:
+- id: "90b17397-eec6-446a-9610-1e5f88ab4f5a"
+  name: "Hen house"
+  address: "Ne golovna, 1"
+  devices:
+  - id: "e21ee45f-b8d1-46e1-b103-b29f5aeecb1d"
+    name: "Lights"
+    model: null
+    house: null
+    type: "LIGHT_DEVICE"
+    createdAt:
+    - 2024
+    - 10
+    - 5
+    - 1
+    - 1
+    - 3
+    - 792186200
+    brightness: 50
+    active: false
+    houseAddress: "no house assigned"
+    workingTime: 0.0
+  - id: "ff11ccc9-de43-4f7d-8a5a-f92755b536a7"
+    name: "Electrical heater"
+    model: null
+    house: null
+    type: "HEAT_DEVICE"
+    createdAt:
+    - 2024
+    - 10
+    - 5
+    - 1
+    - 1
+    - 3
+    - 793185300
+    temperature: 20
+    active: false
+    houseAddress: "no house assigned"
+    workingTime: 0.0
+  - id: "5b4d4099-a151-44a2-9776-742dc806e320"
+    name: "Diode lighting"
+    model: null
+    house: null
+    type: "LIGHT_DEVICE"
+    createdAt:
+    - 2024
+    - 10
+    - 5
+    - 1
+    - 1
+    - 3
+    - 793185300
+    brightness: 50
+    active: false
+    houseAddress: "no house assigned"
+    workingTime: 0.0

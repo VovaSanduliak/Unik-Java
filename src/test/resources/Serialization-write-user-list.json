@@ -1,0 +1,57 @@
+[ {
+  "userName" : "User2",
+  "email" : "user2@mail.com",
+  "password" : "12345",
+  "id" : "06b1a562-ae2c-470c-8b3e-42961e3ebc8b",
+  "houses" : [ ]
+}, {
+  "userName" : "Jane Doe",
+  "email" : "jane.doe@mail.com",
+  "password" : "12345",
+  "id" : "a91f29fe-3386-4d8b-b787-3bce3893d0f7",
+  "houses" : [ ]
+}, {
+  "userName" : "Barack Obama",
+  "email" : "elpresidente@mail.com",
+  "password" : "1234",
+  "id" : "96bdf149-3542-4df5-bd7e-521e8621dba9",
+  "houses" : [ {
+    "id" : "de081d73-ff1e-4c69-8986-1798970a33cf",
+    "name" : "Hen house",
+    "address" : "Ne golovna, 1",
+    "devices" : [ {
+      "id" : "7c7d99b3-07c7-461b-ab98-cc74c6273d19",
+      "name" : "Lights",
+      "model" : null,
+      "house" : null,
+      "type" : "LIGHT_DEVICE",
+      "createdAt" : [ 2024, 10, 5, 0, 57, 49, 351538300 ],
+      "brightness" : 50,
+      "active" : false,
+      "houseAddress" : "no house assigned",
+      "workingTime" : 0.0
+    }, {
+      "id" : "4200b43e-f296-45f6-b825-e1bcdf506626",
+      "name" : "Electrical heater",
+      "model" : null,
+      "house" : null,
+      "type" : "HEAT_DEVICE",
+      "createdAt" : [ 2024, 10, 5, 0, 57, 49, 354536000 ],
+      "temperature" : 20,
+      "active" : false,
+      "houseAddress" : "no house assigned",
+      "workingTime" : 0.0
+    }, {
+      "id" : "cd8f4c63-b3dd-4ccd-b712-a422b19998d5",
+      "name" : "Diode lighting",
+      "model" : null,
+      "house" : null,
+      "type" : "LIGHT_DEVICE",
+      "createdAt" : [ 2024, 10, 5, 0, 57, 49, 354536000 ],
+      "brightness" : 50,
+      "active" : false,
+      "houseAddress" : "no house assigned",
+      "workingTime" : 0.0
+    } ]
+  } ]
+} ]

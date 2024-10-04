@@ -1,0 +1,16 @@
+---
+- userName: "User2"
+  email: "user2@mail.com"
+  password: "12345"
+  id: "4c767a55-63b0-4f27-a688-d372269a4dbf"
+  houses: []
+- userName: "Jane Doe"
+  email: "jane.doe@mail.com"
+  password: "12345"
+  id: "9c11b102-493f-47a7-8a10-a5daaaaeb3f3"
+  houses: []
+- userName: "Barack Obama"
+  email: "elpresidente@mail.com"
+  password: "1234"
+  id: "775afde5-dc89-466b-93d1-5c40a71894b2"
+  houses: []

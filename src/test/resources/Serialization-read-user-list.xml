@@ -1,0 +1,23 @@
+<ListN>
+    <item>
+        <userName>User2</userName>
+        <email>user2@mail.com</email>
+        <password>12345</password>
+        <id>24a68250-ae00-4631-9a64-89a1e178df70</id>
+        <houses/>
+    </item>
+    <item>
+        <userName>Jane Doe</userName>
+        <email>jane.doe@mail.com</email>
+        <password>12345</password>
+        <id>b079fb1f-1e90-4fa3-b980-6de3809a55ec</id>
+        <houses/>
+    </item>
+    <item>
+        <userName>Barack Obama</userName>
+        <email>elpresidente@mail.com</email>
+        <password>1234</password>
+        <id>17c13772-87f3-4b25-b16b-ead8061945c6</id>
+        <houses/>
+    </item>
+</ListN>

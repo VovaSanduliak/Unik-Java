@@ -1,0 +1,19 @@
+[ {
+  "userName" : "User2",
+  "email" : "user2@mail.com",
+  "password" : "12345",
+  "id" : "eb5e84f3-c473-4b03-8c9d-8206e3cf6647",
+  "houses" : [ ]
+}, {
+  "userName" : "Jane Doe",
+  "email" : "jane.doe@mail.com",
+  "password" : "12345",
+  "id" : "be30f528-6c50-45ef-80ef-03054d7de11c",
+  "houses" : [ ]
+}, {
+  "userName" : "Barack Obama",
+  "email" : "elpresidente@mail.com",
+  "password" : "1234",
+  "id" : "436e3521-62ea-4be5-be7e-07e1e34dfe38",
+  "houses" : [ ]
+} ]
