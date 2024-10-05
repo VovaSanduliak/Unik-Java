@@ -1,5 +1,7 @@
 package lab03;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -14,6 +16,8 @@ public abstract class Device implements Comparable<Device> {
     protected String model;
     protected House house;
     protected DeviceType type;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd-hh-mm")
     protected LocalDateTime createdAt;
     protected LocalDateTime lastTurnedOnAt;
     private int warrantyDurationInMonths;
