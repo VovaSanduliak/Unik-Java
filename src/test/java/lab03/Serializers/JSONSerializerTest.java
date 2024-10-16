@@ -128,9 +128,9 @@ class JSONSerializerTest {
     }
 
     @Test
-    void WriteListToFile() throws IOException {
+    void writeListToFile() throws IOException {
         List<User> users = List.of(
-                new User("User2", "user2@mail.com", "12345"),
+                new User("User444444", "user2@mail.com", "12345"),
                 new User("Jane Doe", "jane.doe@mail.com", "12345"),
                 user
         );

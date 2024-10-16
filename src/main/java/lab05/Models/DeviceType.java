@@ -1,4 +1,4 @@
-package lab05;
+package lab05.Models;
 
 /**
  * Enum representing different types of devices.

@@ -1,4 +1,4 @@
-package lab05;
+package lab05.Models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

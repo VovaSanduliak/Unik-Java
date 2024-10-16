@@ -6,7 +6,6 @@ import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
 import jakarta.validation.constraints.*;
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.internal.util.stereotypes.Immutable;
 
 import java.util.Set;
 

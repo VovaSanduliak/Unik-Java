@@ -1,4 +1,4 @@
-package lab05;
+package lab05.Models;
 
 /**
  * Represents a heating device. This class extends the {@link Device} class and

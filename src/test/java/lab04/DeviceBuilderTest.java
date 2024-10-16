@@ -8,6 +8,7 @@ class DeviceBuilderTest {
 
     @Test
     void build() {
+
         DeviceBuilder<HeatDevice> builder = new DeviceBuilder<>();
         HeatDevice device = builder
                 .setName("Heat device")
@@ -43,11 +44,11 @@ class DeviceBuilderTest {
                         .build(new HeatDevice())
         );
 
-        assertTrue(thrown.getMessage().contains("Warranty cannot be less than 3 months"));
-        assertTrue(thrown.getMessage().contains("Name cannot be null"));
-        assertTrue(thrown.getMessage().contains("Model name is too long, maximum 20 characters is required"));
-        assertTrue(thrown.getMessage().contains("Warranty cannot be less than 3 months"));
-
-
+        assertAll(() -> {
+            assertTrue(thrown.getMessage().contains("Warranty cannot be less than 3 months"));
+            assertTrue(thrown.getMessage().contains("Name cannot be null"));
+            assertTrue(thrown.getMessage().contains("Model name is too long, maximum 20 characters is required"));
+            assertTrue(thrown.getMessage().contains("Warranty cannot be less than 3 months"));
+        });
     }
 }

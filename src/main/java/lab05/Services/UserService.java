@@ -1,8 +1,8 @@
 package lab05.Services;
 
-import lab05.Device;
-import lab05.House;
-import lab05.User;
+import lab05.Models.Device;
+import lab05.Models.House;
+import lab05.Models.User;
 
 import java.util.List;
 import java.util.Map;

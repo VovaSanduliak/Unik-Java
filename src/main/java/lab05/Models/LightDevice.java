@@ -1,4 +1,4 @@
-package lab05;
+package lab05.Models;
 
 /**
  * Represents a LightDevice that extends the abstract Device class.

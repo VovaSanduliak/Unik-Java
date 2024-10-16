@@ -1,4 +1,4 @@
-package lab05;
+package lab05.Models;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validator;

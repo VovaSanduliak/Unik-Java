@@ -1,4 +1,4 @@
-package lab05;
+package lab05.Models;
 
 /**
  * A class responsible for constructing specific device configurations.

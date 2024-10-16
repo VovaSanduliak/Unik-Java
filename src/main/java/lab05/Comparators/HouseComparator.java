@@ -1,6 +1,6 @@
 package lab05.Comparators;
 
-import lab05.House;
+import lab05.Models.House;
 
 import java.util.Comparator;
 

@@ -3,80 +3,62 @@
     <userName>User2</userName>
     <email>user2@mail.com</email>
     <password>12345</password>
-    <id>05967fab-6b9f-42f1-ac12-38dd5e77a403</id>
+    <id>78e08027-0ff5-43af-9863-18921eab1844</id>
     <houses/>
   </item>
   <item>
     <userName>Jane Doe</userName>
     <email>jane.doe@mail.com</email>
     <password>12345</password>
-    <id>7b759200-0b1a-4c89-bc71-d71a64c40dd8</id>
+    <id>fe1e6f2a-9b4f-4711-94c1-5cec3ec5fcfa</id>
     <houses/>
   </item>
   <item>
     <userName>Barack Obama</userName>
     <email>elpresidente@mail.com</email>
     <password>1234</password>
-    <id>714bf537-f7c1-45d0-b446-bf86d067365e</id>
+    <id>7441c07f-69e0-4091-8491-d6fe69966c9a</id>
     <houses>
       <houses>
-        <id>111e4ae0-23b9-4cfc-bac2-00ea0bead5f2</id>
+        <id>ed31722b-23aa-4bee-9e56-98519bf2f6db</id>
         <name>Hen house</name>
         <address>Ne golovna, 1</address>
         <devices>
           <devices>
-            <id>14e7d063-c65e-4ec5-8e56-9f320db6fe93</id>
+            <id>c92263c2-2756-4e5d-be4c-b1a0072a452c</id>
             <name>Lights</name>
             <model/>
             <house/>
             <type>LIGHT_DEVICE</type>
-            <createdAt>2024</createdAt>
-            <createdAt>10</createdAt>
-            <createdAt>5</createdAt>
-            <createdAt>1</createdAt>
-            <createdAt>0</createdAt>
-            <createdAt>14</createdAt>
-            <createdAt>570709800</createdAt>
+            <createdAt>2024-10-11-11-40</createdAt>
             <brightness>50</brightness>
             <active>false</active>
-            <workingTime>0.0</workingTime>
             <houseAddress>no house assigned</houseAddress>
+            <workingTime>0.0</workingTime>
           </devices>
           <devices>
-            <id>b93af612-a5d0-4f37-846d-e78ab45f8f35</id>
+            <id>7786c4f6-85cf-4942-9876-137d9568c4af</id>
             <name>Electrical heater</name>
             <model/>
             <house/>
             <type>HEAT_DEVICE</type>
-            <createdAt>2024</createdAt>
-            <createdAt>10</createdAt>
-            <createdAt>5</createdAt>
-            <createdAt>1</createdAt>
-            <createdAt>0</createdAt>
-            <createdAt>14</createdAt>
-            <createdAt>573707600</createdAt>
+            <createdAt>2024-10-11-11-40</createdAt>
             <temperature>20</temperature>
             <active>false</active>
-            <workingTime>0.0</workingTime>
             <houseAddress>no house assigned</houseAddress>
+            <workingTime>0.0</workingTime>
           </devices>
           <devices>
-            <id>d4230e9c-168e-4105-854a-a34f03792a16</id>
+            <id>3c692d9f-a80a-4e3a-9f3c-d16a71a31ec7</id>
             <name>Diode lighting</name>
             <model/>
             <house/>
             <type>LIGHT_DEVICE</type>
-            <createdAt>2024</createdAt>
-            <createdAt>10</createdAt>
-            <createdAt>5</createdAt>
-            <createdAt>1</createdAt>
-            <createdAt>0</createdAt>
-            <createdAt>14</createdAt>
-            <createdAt>573707600</createdAt>
+            <createdAt>2024-10-11-11-40</createdAt>
             <brightness>50</brightness>
             <active>false</active>
-            <workingTime>0.0</workingTime>
             <houseAddress>no house assigned</houseAddress>
+            <workingTime>0.0</workingTime>
           </devices>
         </devices>
       </houses>

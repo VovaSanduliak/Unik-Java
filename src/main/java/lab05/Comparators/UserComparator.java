@@ -1,6 +1,6 @@
 package lab05.Comparators;
 
-import lab05.User;
+import lab05.Models.User;
 
 import java.util.Comparator;
 
